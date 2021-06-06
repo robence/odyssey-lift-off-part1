@@ -25,10 +25,6 @@ const mocks = {
 const server = new ApolloServer({
   typeDefs,
   mocks,
-  cors: {
-    origin: "*", // <- allow request from all domains
-    credentials: true,
-  },
 });
 
 server.listen().then(() => {
